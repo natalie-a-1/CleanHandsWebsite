@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 
 interface TestimonialCardProps {
@@ -8,14 +10,14 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ name, quote, rating }: TestimonialCardProps) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+    <div className="bg-white p-6 md:p-8 border border-neutral-100">
       <div className="flex mb-4">
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
             xmlns="http://www.w3.org/2000/svg"
-            className={`h-5 w-5 ${
-              i < rating ? 'text-yellow-400' : 'text-gray-300'
+            className={`h-4 w-4 ${
+              i < rating ? 'text-primary-400' : 'text-neutral-200'
             }`}
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -24,8 +26,8 @@ const TestimonialCard = ({ name, quote, rating }: TestimonialCardProps) => {
           </svg>
         ))}
       </div>
-      <p className="text-gray-700 mb-4 italic">"{quote}"</p>
-      <p className="text-primary-600 font-medium">{name}</p>
+      <p className="text-neutral-600 mb-6 text-sm leading-relaxed italic">"{quote}"</p>
+      <p className="text-primary-600 text-sm uppercase tracking-wider font-medium">{name}</p>
     </div>
   );
 };

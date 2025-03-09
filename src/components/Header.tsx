@@ -9,35 +9,36 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="container-custom py-4">
+      <div className="container-custom py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-xl font-serif font-bold text-primary-700">Clean Hands Au Naturel</span>
+            <span className="text-xl font-serif text-primary-700 tracking-widest uppercase">Clean Hands</span>
+            <span className="ml-1 text-lg italic font-serif text-primary-600">Au Naturel</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-primary-600 transition-colors">
+          <nav className="hidden md:flex items-center space-x-10">
+            <Link href="/" className="text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest">
               Home
             </Link>
-            <Link href="#products" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link href="#products" className="text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest">
               Products
             </Link>
-            <Link href="#about" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link href="#about" className="text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest">
               About
             </Link>
-            <Link href="#contact" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link href="#contact" className="text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest">
               Contact
             </Link>
-            <Link href="#" className="btn-primary">
+            <Link href="#" className="btn-primary py-2 px-4">
               Shop Now
             </Link>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700 focus:outline-none"
+            className="md:hidden text-neutral-700 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
@@ -51,14 +52,14 @@ const Header = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  strokeWidth={1.5}
                   d="M6 18L18 6M6 6l12 12"
                 />
               ) : (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  strokeWidth={1.5}
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               )}
@@ -68,31 +69,31 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 space-y-4">
+          <nav className="md:hidden mt-6 pb-6 space-y-6 border-t border-neutral-100 pt-6">
             <Link
               href="/"
-              className="block text-gray-700 hover:text-primary-600 transition-colors"
+              className="block text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="#products"
-              className="block text-gray-700 hover:text-primary-600 transition-colors"
+              className="block text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest"
               onClick={() => setIsMenuOpen(false)}
             >
               Products
             </Link>
             <Link
               href="#about"
-              className="block text-gray-700 hover:text-primary-600 transition-colors"
+              className="block text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="#contact"
-              className="block text-gray-700 hover:text-primary-600 transition-colors"
+              className="block text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact

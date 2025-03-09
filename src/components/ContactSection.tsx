@@ -30,21 +30,21 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-secondary-50">
+    <section id="contact" className="py-20 bg-neutral-50">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-700">Contact Us</h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Have questions about our products or want to place a bulk order? Get in touch with us!
+          <h2 className="text-3xl font-serif font-light mb-4 text-primary-700 uppercase tracking-wider">Contact Us</h2>
+          <p className="text-neutral-600 max-w-2xl mx-auto">
+            Have questions about our products or want to place a bulk order? Get in touch with us.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div>
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
-              <div className="mb-6">
-                <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+            <form onSubmit={handleSubmit} className="bg-white p-8 border border-neutral-100">
+              <div className="mb-8">
+                <label htmlFor="name" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
                   Your Name
                 </label>
                 <input
@@ -53,12 +53,12 @@ const ContactSection = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="input-field"
                   required
                 />
               </div>
-              <div className="mb-6">
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+              <div className="mb-8">
+                <label htmlFor="email" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
                   Your Email
                 </label>
                 <input
@@ -67,12 +67,12 @@ const ContactSection = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="input-field"
                   required
                 />
               </div>
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+              <div className="mb-8">
+                <label htmlFor="message" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
                   Your Message
                 </label>
                 <textarea
@@ -81,7 +81,7 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="input-field"
                   required
                 ></textarea>
               </div>
@@ -96,15 +96,15 @@ const ContactSection = () => {
 
           {/* Contact Information */}
           <div className="flex flex-col justify-center">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-6 text-primary-700">Get In Touch</h3>
+            <div className="bg-white p-8 border border-neutral-100">
+              <h3 className="text-xl font-serif font-light mb-8 text-primary-700 uppercase tracking-wider">Get In Touch</h3>
               
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <div className="flex items-start">
-                  <div className="bg-primary-100 p-3 rounded-full mr-4">
+                  <div className="bg-primary-50 p-3 text-primary-500 mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-primary-600"
+                      className="h-5 w-5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -112,16 +112,16 @@ const ContactSection = () => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth={2}
+                        strokeWidth={1.5}
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800 mb-1">Email</h4>
+                    <h4 className="text-sm font-medium text-neutral-800 mb-1 uppercase tracking-wider">Email</h4>
                     <a
                       href="mailto:KAWB3@icloud.com"
-                      className="text-primary-600 hover:text-primary-700 transition-colors"
+                      className="text-primary-600 hover:text-primary-700 transition-colors text-sm"
                     >
                       KAWB3@icloud.com
                     </a>
@@ -129,10 +129,10 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-primary-100 p-3 rounded-full mr-4">
+                  <div className="bg-primary-50 p-3 text-primary-500 mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-primary-600"
+                      className="h-5 w-5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -140,16 +140,16 @@ const ContactSection = () => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth={2}
+                        strokeWidth={1.5}
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800 mb-1">Phone</h4>
+                    <h4 className="text-sm font-medium text-neutral-800 mb-1 uppercase tracking-wider">Phone</h4>
                     <a
                       href="tel:+14056158338"
-                      className="text-primary-600 hover:text-primary-700 transition-colors"
+                      className="text-primary-600 hover:text-primary-700 transition-colors text-sm"
                     >
                       +1 405 615 8338
                     </a>
@@ -157,10 +157,10 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-primary-100 p-3 rounded-full mr-4">
+                  <div className="bg-primary-50 p-3 text-primary-500 mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-primary-600"
+                      className="h-5 w-5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -168,16 +168,16 @@ const ContactSection = () => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth={2}
+                        strokeWidth={1.5}
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800 mb-1">Business Hours</h4>
-                    <p className="text-gray-600">Monday - Friday: 9AM - 5PM</p>
-                    <p className="text-gray-600">Saturday: 10AM - 2PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
+                    <h4 className="text-sm font-medium text-neutral-800 mb-1 uppercase tracking-wider">Business Hours</h4>
+                    <p className="text-neutral-600 text-sm">Monday - Friday: 9AM - 5PM</p>
+                    <p className="text-neutral-600 text-sm">Saturday: 10AM - 2PM</p>
+                    <p className="text-neutral-600 text-sm">Sunday: Closed</p>
                   </div>
                 </div>
               </div>
