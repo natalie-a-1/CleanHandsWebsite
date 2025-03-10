@@ -15,6 +15,7 @@ const Footer = () => {
             <h3 className="text-base font-serif tracking-widest uppercase mb-6">Clean Hands Au Naturel</h3>
             <p className="mb-4 text-sm text-primary-100 font-light">Premium organic hand sanitizer with natural scents.</p>
             <p className="font-light text-sm tracking-widest uppercase text-primary-50">Disinfects. Protects. Heals.</p>
+            <p className="mt-4 text-sm text-primary-100 font-light">Locally made and sold in Oklahoma.</p>
           </div>
 
           {/* Quick Links */}
@@ -34,6 +35,11 @@ const Footer = () => {
               <li>
                 <Link href="#about" className="text-sm text-primary-100 hover:text-white transition-colors uppercase tracking-wide">
                   About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="#where-to-buy" className="text-sm text-primary-100 hover:text-white transition-colors uppercase tracking-wide">
+                  Where to Buy
                 </Link>
               </li>
               <li>

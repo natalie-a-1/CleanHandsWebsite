@@ -27,6 +27,9 @@ const Header = () => {
             <Link href="#about" className="text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest">
               About
             </Link>
+            <Link href="#where-to-buy" className="text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest">
+              Where to Buy
+            </Link>
             <Link href="#contact" className="text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest">
               Contact
             </Link>
@@ -89,6 +92,13 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               About
+            </Link>
+            <Link
+              href="#where-to-buy"
+              className="block text-neutral-600 hover:text-primary-600 transition-colors uppercase text-sm tracking-widest"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Where to Buy
             </Link>
             <Link
               href="#contact"

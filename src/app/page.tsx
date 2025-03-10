@@ -177,6 +177,56 @@ export default function Home() {
         </div>
       </section>
       
+      {/* Where to Buy Section */}
+      <section id="where-to-buy" className="py-24 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-serif font-light mb-4 text-primary-700 uppercase tracking-wider">Where to Buy</h2>
+            <p className="text-neutral-600 max-w-2xl mx-auto">
+              Clean Hands Au Naturel is proudly sold at select locations in Oklahoma. Visit one of our retail partners to purchase our products.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            {/* Location 1 */}
+            <div className="bg-primary-50 p-8 border border-primary-100">
+              <h3 className="text-xl font-serif tracking-wider uppercase mb-3 text-primary-700">Beauty Co-Op Holistic Spalon</h3>
+              <address className="not-italic text-neutral-600 mb-4">
+                <p>1133 W. 15th St</p>
+                <p>Edmond, Oklahoma 73013</p>
+              </address>
+              <div className="flex items-center pt-4 border-t border-primary-100">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <a href="https://maps.google.com/?q=1133+W.+15th+St,+Edmond,+Oklahoma+73013" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700">
+                  View on Map
+                </a>
+              </div>
+            </div>
+            
+            {/* Location 2 */}
+            <div className="bg-primary-50 p-8 border border-primary-100">
+              <h3 className="text-xl font-serif tracking-wider uppercase mb-3 text-primary-700">Bad Granny's Bazaar</h3>
+              <address className="not-italic text-neutral-600 mb-4">
+                <p>1759 NW 16th St</p>
+                <p>Oklahoma City, Oklahoma</p>
+              </address>
+              <div className="flex items-center pt-4 border-t border-primary-100">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <a href="https://maps.google.com/?q=1759+NW+16th+St,+Oklahoma+City,+Oklahoma" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700">
+                  View on Map
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Testimonials Section - Commented out as requested */}
       {/*
       <section className="py-24 bg-white">
