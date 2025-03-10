@@ -41,7 +41,7 @@ const ProductCard = ({ name, color, description }: ProductCardProps) => {
         
         {/* Size and pricing options */}
         <div className="pt-4 border-t border-neutral-100">
-          <div className="space-y-2 mb-4">
+          <div className="space-y-2">
             <div className="flex justify-between items-center text-sm">
               <span className="text-neutral-700 font-medium">Mini</span>
               <span className="text-neutral-700">$5.00</span>
@@ -61,9 +61,6 @@ const ProductCard = ({ name, color, description }: ProductCardProps) => {
             Add to Cart
           </button>
           */}
-          <p className="w-full text-center text-neutral-500 text-xs tracking-wider py-2">
-            Shopping cart functionality coming soon
-          </p>
         </div>
       </div>
     </div>
