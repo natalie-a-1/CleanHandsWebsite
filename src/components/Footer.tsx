@@ -88,7 +88,8 @@ const Footer = () => {
               </li>
             </ul>
             
-            {/* Social Media Links */}
+            {/* Social Media Links - commented out as requested */}
+            {/*
             <div className="mt-8">
               <h4 className="text-xs uppercase tracking-widest mb-4 text-primary-200">Follow Us</h4>
               <div className="flex space-x-4">
@@ -136,6 +137,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+            */}
           </div>
         </div>
 

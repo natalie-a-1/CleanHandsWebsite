@@ -12,9 +12,8 @@ const Header = () => {
       <div className="container-custom py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-xl font-serif text-primary-700 tracking-widest uppercase">Clean Hands</span>
-            <span className="ml-1 text-lg italic font-serif text-primary-600">Au Naturel</span>
+          <Link href="/" className="items-center">
+            <span className="text-base md:text-xl font-serif text-primary-700 tracking-widest uppercase whitespace-nowrap">CLEAN HANDS AU NATUREL</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -155,31 +155,6 @@ const ContactSection = () => {
                     </a>
                   </div>
                 </div>
-
-                <div className="flex items-start">
-                  <div className="bg-primary-50 p-3 text-primary-500 mr-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-medium text-neutral-800 mb-1 uppercase tracking-wider">Business Hours</h4>
-                    <p className="text-neutral-600 text-sm">Monday - Friday: 9AM - 5PM</p>
-                    <p className="text-neutral-600 text-sm">Saturday: 10AM - 2PM</p>
-                    <p className="text-neutral-600 text-sm">Sunday: Closed</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
