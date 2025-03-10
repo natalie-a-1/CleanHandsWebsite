@@ -38,9 +38,26 @@ const ProductCard = ({ name, color, description }: ProductCardProps) => {
       <div className="p-6">
         <h3 className="text-lg font-serif tracking-wider uppercase mb-2 text-primary-700">{name}</h3>
         <p className="text-neutral-600 mb-4 text-sm">{description}</p>
-        <div className="flex justify-between items-center pt-4 border-t border-neutral-100">
-          <span className="text-neutral-700 font-light">$12.99</span>
-          <button className="text-primary-600 hover:text-primary-700 uppercase text-xs tracking-wider font-medium group-hover:underline">Add to Cart</button>
+        
+        {/* Size and pricing options */}
+        <div className="pt-4 border-t border-neutral-100">
+          <div className="space-y-2 mb-4">
+            <div className="flex justify-between items-center text-sm">
+              <span className="text-neutral-700 font-medium">Mini</span>
+              <span className="text-neutral-700">$5.00</span>
+            </div>
+            <div className="flex justify-between items-center text-sm">
+              <span className="text-neutral-700 font-medium">2 oz.</span>
+              <span className="text-neutral-700">$10.00</span>
+            </div>
+            <div className="flex justify-between items-center text-sm">
+              <span className="text-neutral-700 font-medium">4 oz.</span>
+              <span className="text-neutral-700">$16.00</span>
+            </div>
+          </div>
+          <button className="w-full text-center text-primary-600 hover:text-primary-700 uppercase text-xs tracking-wider font-medium py-2 border border-primary-500 hover:bg-primary-50 transition-colors duration-300">
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
