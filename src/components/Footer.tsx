@@ -143,6 +143,13 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-primary-500 text-center">
           <p className="text-xs text-primary-200">&copy; {currentYear} Clean Hands Au Naturel. All rights reserved.</p>
+          
+          {/* FDA Disclaimer */}
+          <div className="mt-6 text-xs text-primary-300 max-w-3xl mx-auto text-center">
+            <p className="mb-2 opacity-60">
+              Disclaimer: This product has not been evaluated by the FDA. It is not intended to diagnose, treat, cure, or prevent any disease. If you have any allergies or skin sensitivities, please read the ingredients carefully before use. If you experience any adverse reactions, please discontinue use immediately and consult a medical professional.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

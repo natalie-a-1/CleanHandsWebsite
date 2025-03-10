@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
-import TestimonialCard from '@/components/TestimonialCard';
-import ContactSection from '@/components/ContactSection';
+// import TestimonialCard from '@/components/TestimonialCard';
+// import ContactSection from '@/components/ContactSection';
 import { Scent, Testimonial } from '@/types';
 
 const scents: Scent[] = [
@@ -21,6 +21,8 @@ const scents: Scent[] = [
   { name: 'PEPPERMINT', color: 'accent-peppermint', description: 'Cooling and invigorating' },
 ];
 
+// Testimonials data commented out but kept for future use
+/*
 const testimonials: Testimonial[] = [
   {
     id: 1,
@@ -41,6 +43,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
   },
 ];
+*/
 
 export default function Home() {
   return (
@@ -91,9 +94,35 @@ export default function Home() {
               <p className="text-neutral-600 mb-6 font-light">
                 At Clean Hands Au Naturel, we believe that keeping your hands clean shouldn't come at the expense of your skin's health. Our organic hand sanitizers are crafted with natural ingredients that effectively kill germs while nourishing your skin.
               </p>
-              <p className="text-neutral-600 mb-10 font-light">
+              <p className="text-neutral-600 mb-6 font-light">
                 Unlike conventional sanitizers that can leave your hands dry and irritated, our formula includes moisturizing elements that keep your skin soft and healthy.
               </p>
+              
+              <div className="bg-primary-50 p-6 mb-6">
+                <h3 className="text-lg font-serif tracking-wider uppercase mb-4 text-primary-700">Key Benefits</h3>
+                <ul className="space-y-3 text-neutral-600 text-sm">
+                  <li>• Promotes Healthy Clean Hands</li>
+                  <li>• Made with high quality ingredients</li>
+                  <li>• Cleans, protects, disinfects and is healing</li>
+                  <li>• Can be used often without drying out hands</li>
+                  <li>• Helps soothe redness and moisturize</li>
+                  <li>• Fine mist sprayer makes it go a long way</li>
+                  <li>• Dark glass bottle keeps product fresh</li>
+                </ul>
+              </div>
+              
+              <div className="bg-primary-50 p-6">
+                <h3 className="text-lg font-serif tracking-wider uppercase mb-4 text-primary-700">Key Ingredients</h3>
+                <ul className="space-y-3 text-neutral-600 text-sm">
+                  <li>• <strong>Alcohol</strong> - Disinfects</li>
+                  <li>• <strong>Hydrogen Peroxide</strong> - Antiseptic, germicidal</li>
+                  <li>• <strong>100% Natural Organic Hydrosol Witch Hazel (no alcohol)</strong> - Antioxidant, anti-inflammatory, anti-aging, cleans and soothes</li>
+                  <li>• <strong>100% Pure Kosher Organic Food Grade Vegetable Glycerin</strong> - Moisturizing, softening, hypoallergenic</li>
+                  <li>• <strong>Reverse Osmosis Water</strong> - No chemicals</li>
+                  <li>• <strong>Young Living Essential Oils</strong> - Various scents with their own healing benefits</li>
+                </ul>
+              </div>
+              
               <div className="flex flex-col sm:flex-row gap-8 mt-8">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 flex items-center justify-center border border-primary-200">
@@ -148,7 +177,8 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Testimonials Section */}
+      {/* Testimonials Section - Commented out as requested */}
+      {/*
       <section className="py-24 bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
@@ -170,9 +200,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
       
-      {/* Contact Section */}
-      <ContactSection />
+      {/* Contact Section - Commented out as requested */}
+      {/* <ContactSection /> */}
       
       <Footer />
     </main>
