@@ -55,9 +55,15 @@ const ProductCard = ({ name, color, description }: ProductCardProps) => {
               <span className="text-neutral-700">$16.00</span>
             </div>
           </div>
+          
+          {/* Add to Cart button commented out as requested 
           <button className="w-full text-center text-primary-600 hover:text-primary-700 uppercase text-xs tracking-wider font-medium py-2 border border-primary-500 hover:bg-primary-50 transition-colors duration-300">
             Add to Cart
           </button>
+          */}
+          <p className="w-full text-center text-neutral-500 text-xs tracking-wider py-2">
+            Shopping cart functionality coming soon
+          </p>
         </div>
       </div>
     </div>

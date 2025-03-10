@@ -3,11 +3,15 @@
 import React, { useState } from 'react';
 
 const ContactSection = () => {
+  // Form state is kept but functionality is commented out
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -17,16 +21,11 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      message: '',
-    });
+    // Form submission functionality commented out as requested
+    // Will be set up later
+    alert("Contact form functionality is currently disabled. Please contact us directly via email.");
   };
 
   return (
@@ -40,61 +39,83 @@ const ContactSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Form */}
+          {/* Contact Form - Commented out but UI structure kept */}
           <div>
-            <form onSubmit={handleSubmit} className="bg-white p-8 border border-neutral-100">
-              <div className="mb-8">
-                <label htmlFor="name" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="input-field"
-                  required
-                />
+            <div className="bg-white p-8 border border-neutral-100">
+              <div className="text-center py-8">
+                <p className="text-neutral-600 mb-4">The contact form is currently disabled.</p>
+                <p className="text-neutral-600 mb-8">Please contact us directly via email or phone.</p>
+                <div className="inline-block border-t border-neutral-200 w-16"></div>
+                <p className="mt-8 text-sm text-neutral-500">
+                  Contact form functionality will be enabled soon.
+                </p>
               </div>
-              <div className="mb-8">
-                <label htmlFor="email" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="input-field"
-                  required
-                />
-              </div>
-              <div className="mb-8">
-                <label htmlFor="message" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={5}
-                  className="input-field"
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="btn-primary w-full"
-              >
-                Send Message
-              </button>
-            </form>
+              
+              {/* Commented out form
+              <form onSubmit={handleSubmit} className="bg-white p-8 border border-neutral-100">
+                {errorMessage && (
+                  <div className="mb-6 p-4 bg-red-50 border border-red-100 text-red-600">
+                    {errorMessage}
+                  </div>
+                )}
+                <div className="mb-8">
+                  <label htmlFor="name" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="input-field"
+                    required
+                  />
+                </div>
+                <div className="mb-8">
+                  <label htmlFor="email" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
+                    Your Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="input-field"
+                    required
+                  />
+                </div>
+                <div className="mb-8">
+                  <label htmlFor="message" className="block text-neutral-600 font-light mb-2 uppercase text-xs tracking-wider">
+                    Your Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={5}
+                    className="input-field"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="btn-primary w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+                <p className="mt-4 text-xs text-neutral-500 text-center">
+                  Messages will be sent to kawb3@icloud.com
+                </p>
+              </form>
+              */}
+            </div>
           </div>
 
-          {/* Contact Information */}
+          {/* Contact Information - Kept intact */}
           <div className="flex flex-col justify-center">
             <div className="bg-white p-8 border border-neutral-100">
               <h3 className="text-xl font-serif font-light mb-8 text-primary-700 uppercase tracking-wider">Get In Touch</h3>
@@ -120,10 +141,10 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-sm font-medium text-neutral-800 mb-1 uppercase tracking-wider">Email</h4>
                     <a
-                      href="mailto:KAWB3@icloud.com"
+                      href="mailto:kawb3@icloud.com"
                       className="text-primary-600 hover:text-primary-700 transition-colors text-sm"
                     >
-                      KAWB3@icloud.com
+                      kawb3@icloud.com
                     </a>
                   </div>
                 </div>
