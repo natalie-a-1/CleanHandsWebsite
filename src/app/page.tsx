@@ -79,7 +79,12 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-24 bg-white">
         <div className="container-custom">
-          <div className="flex flex-col md:flex-row items-center gap-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-serif font-light mb-4 text-primary-700 uppercase tracking-wider">Our Natural Approach</h2>
+          </div>
+          
+          {/* Image and Introduction */}
+          <div className="flex flex-col md:flex-row items-center gap-12 mb-16">
             <div className="md:w-1/2">
               <Image
                 src="/images/bottleHand.jpeg"
@@ -90,65 +95,69 @@ export default function Home() {
               />
             </div>
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-serif font-light mb-8 text-primary-700 uppercase tracking-wider">Our Natural Approach</h2>
               <p className="text-neutral-600 mb-6 font-light">
                 At Clean Hands Au Naturel, we believe that keeping your hands clean shouldn't come at the expense of your skin's health. Our organic hand sanitizers are crafted with natural ingredients that effectively kill germs while nourishing your skin.
               </p>
-              <p className="text-neutral-600 mb-6 font-light">
+              <p className="text-neutral-600 font-light">
                 Unlike conventional sanitizers that can leave your hands dry and irritated, our formula includes moisturizing elements that keep your skin soft and healthy.
               </p>
-              
-              <div className="bg-primary-50 p-6 mb-6">
-                <h3 className="text-lg font-serif tracking-wider uppercase mb-4 text-primary-700">Key Benefits</h3>
-                <ul className="space-y-3 text-neutral-600 text-sm">
-                  <li>• Promotes Healthy Clean Hands</li>
-                  <li>• Made with high quality ingredients</li>
-                  <li>• Cleans, protects, disinfects and is healing</li>
-                  <li>• Can be used often without drying out hands</li>
-                  <li>• Helps soothe redness and moisturize</li>
-                  <li>• Fine mist sprayer makes it go a long way</li>
-                  <li>• Dark glass bottle keeps product fresh</li>
-                </ul>
+            </div>
+          </div>
+          
+          {/* Benefits and Ingredients Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Key Benefits */}
+            <div className="bg-primary-50 p-6 h-full">
+              <h3 className="text-lg font-serif tracking-wider uppercase mb-4 text-primary-700">Key Benefits</h3>
+              <ul className="space-y-3 text-neutral-600 text-sm">
+                <li>• Promotes Healthy Clean Hands</li>
+                <li>• Made with high quality ingredients</li>
+                <li>• Cleans, protects, disinfects and is healing</li>
+                <li>• Can be used often without drying out hands</li>
+                <li>• Helps soothe redness and moisturize</li>
+                <li>• Fine mist sprayer makes it go a long way</li>
+                <li>• Dark glass bottle keeps product fresh</li>
+              </ul>
+            </div>
+            
+            {/* Key Ingredients */}
+            <div className="bg-primary-50 p-6 h-full">
+              <h3 className="text-lg font-serif tracking-wider uppercase mb-4 text-primary-700">Key Ingredients</h3>
+              <ul className="space-y-3 text-neutral-600 text-sm">
+                <li>• <strong>Alcohol</strong> - Disinfects</li>
+                <li>• <strong>Hydrogen Peroxide</strong> - Antiseptic, germicidal</li>
+                <li>• <strong>100% Natural Organic Hydrosol Witch Hazel (no alcohol)</strong> - Antioxidant, anti-inflammatory, anti-aging, cleans and soothes</li>
+                <li>• <strong>100% Pure Kosher Organic Food Grade Vegetable Glycerin</strong> - Moisturizing, softening, hypoallergenic</li>
+                <li>• <strong>Reverse Osmosis Water</strong> - No chemicals</li>
+                <li>• <strong>Young Living Essential Oils</strong> - Various scents with their own healing benefits</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-8 mt-12 justify-center">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex items-center justify-center border border-primary-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
+                </svg>
               </div>
-              
-              <div className="bg-primary-50 p-6">
-                <h3 className="text-lg font-serif tracking-wider uppercase mb-4 text-primary-700">Key Ingredients</h3>
-                <ul className="space-y-3 text-neutral-600 text-sm">
-                  <li>• <strong>Alcohol</strong> - Disinfects</li>
-                  <li>• <strong>Hydrogen Peroxide</strong> - Antiseptic, germicidal</li>
-                  <li>• <strong>100% Natural Organic Hydrosol Witch Hazel (no alcohol)</strong> - Antioxidant, anti-inflammatory, anti-aging, cleans and soothes</li>
-                  <li>• <strong>100% Pure Kosher Organic Food Grade Vegetable Glycerin</strong> - Moisturizing, softening, hypoallergenic</li>
-                  <li>• <strong>Reverse Osmosis Water</strong> - No chemicals</li>
-                  <li>• <strong>Young Living Essential Oils</strong> - Various scents with their own healing benefits</li>
-                </ul>
+              <span className="text-neutral-600 text-sm uppercase tracking-wider">Organic Ingredients</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex items-center justify-center border border-primary-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
+                </svg>
               </div>
-              
-              <div className="flex flex-col sm:flex-row gap-8 mt-8">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center border border-primary-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-neutral-600 text-sm uppercase tracking-wider">Organic Ingredients</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center border border-primary-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-neutral-600 text-sm uppercase tracking-wider">Cruelty-Free</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center border border-primary-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-neutral-600 text-sm uppercase tracking-wider">Eco-Friendly</span>
-                </div>
+              <span className="text-neutral-600 text-sm uppercase tracking-wider">Cruelty-Free</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex items-center justify-center border border-primary-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
+                </svg>
               </div>
+              <span className="text-neutral-600 text-sm uppercase tracking-wider">Eco-Friendly</span>
             </div>
           </div>
         </div>
